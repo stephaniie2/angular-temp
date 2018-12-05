@@ -7,7 +7,7 @@
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
-      "prefix": "app",
+      "prefix": "bwm",
       "schematics": {},
       "architect": {
         "build": {
@@ -137,5 +137,13 @@
       }
     }
   },
-  "defaultProject": "bwm-cli"
+  "defaultProject": "bwm-cli",
+  "schematics": {
+    "@schematics/angular": {
+      "component": {
+        "spec": false,
+        "styleExt": "scss",
+      }
+    }
+  }
 }
