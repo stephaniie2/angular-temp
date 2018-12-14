@@ -7,7 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class RentalListItemComponent implements OnInit {
 
-	@Input() currentRental: any;
+	@Input() rental: any;
 
   constructor() { }
 
