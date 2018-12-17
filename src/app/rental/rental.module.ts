@@ -3,6 +3,7 @@ import { CommonModule } from "@angular/common";
 import { Routes, RouterModule } from "@angular/router";
 import { HttpClientModule } from '@angular/common/http';
 import { NgPipesModule } from 'ngx-pipes';
+import { MapModule } from '../common/map/map.module';
 
 import { RentalComponent } from "./rental.component";
 import { RentalService } from "./shared/rental.service";
@@ -32,7 +33,13 @@ const routes: Routes = [
 		RentalDetailComponent,
 		UppercasePipe
 	],
-	imports: [CommonModule, RouterModule.forRoot(routes), HttpClientModule, NgPipesModule],
+	imports: [
+		CommonModule, 
+		RouterModule.forRoot(routes), 
+		HttpClientModule, 
+		NgPipesModule,
+		MapModule
+	],
 	providers: [RentalService]
 })
 export class RentalModule {}
