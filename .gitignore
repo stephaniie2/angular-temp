@@ -43,4 +43,4 @@ testem.log
 Thumbs.db
 
 # Server Files
-/server/config/dev.js
+/server/.vscode
